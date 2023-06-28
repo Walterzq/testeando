@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Primer formulario</title>
+  </head>
+
+<script>  
+  function valiateform(){  
+    var name=document.miform.nombre.value;  
+    var password=document.miform.cont.value;  
+    if (name==null || name=="")
+    {  
+      console.log("hola mundo");  
+      alert("El nombre no puede estar en blanco");  
+      return false;  
+    }
+    else if(password.length<6)
+    {  
+      console.log(name.length);  
+      alert("La contraseña debe tener como minimo 6 caracteres.");  
+      return false;  
+      }  
+  }  
+</script>  
+
+
+<body>  
+  <h1> Primer formulario </h1>
+
+<form name="miform" method="post" action="form2.html" onsubmit="return valiateform()" >  
+  Nombre: <input type="text" name="nombre"><br/>  
+  Contraseña: <input type="password" name="cont"><br/> 
+
+  Apellido: <input type="text" name="Apellido">
+  Nombre: <input type="text" name="Nombre">
+  Email: <input type="email" name="Email">
+  <br/>
+  Fecha de Nacimiento: <input type="date" name="Fecha de Nacimiento"><br/> 
+  Edad: <input type="number" name="Edad">
+  <br/>
+  Nacionalidad: <input type="text" name="Nacionalidad"><br/>  
+  <br/>
+  DNI:<input type="number" name="DNI"><br/>  
+  <br/>
+  Genero <br>
+  <input type="radio" id="Soltero" name="fav_language" value="Soltero">
+  <label for="Soltero">Soltero</label><br>
+  <input type="radio" id="Casado" name="fav_language" value="Casado">
+  <label for="Casado">Casado</label><br>
+  <input type="radio" id="Divociado" name="fav_language" value="Divociado">
+  <label for="Divociado">Divociado</label><br>
+  <input type="radio" id="Viudo" name="fav_language" value="Viudo">
+  <label for="Viudo">Viudo</label><br>
+
+  <br/>
+  Estado Civil: <select name="Estado Civil" required> <option value="Soltero/a"> Soltero/a <br> </option> /option> <option value="casado/a">Casado/a</option> <option value="divorciado/a">Divorciado/a</option> <option value="viudo/a">Viudo/a</option> <option value="otro">Otro</option> </select><br>
+  <br/>
+  Telefono: <input type="tel" name="Telefono"><br/>  
+  <br/>
+  Celular: <input type="tel" name="Calular"><br/>
+  <br/>
+  Direccion: <input type="text" name="Direccion"><br/>  
+  <br/>
+  Provincia: <input type="text" name="Provincia"><br/>  
+  <br/>
+  Codigo Postal: <input type="text" name="Codigo Postal"><br/> 
+  <br/>
+  Pais: <input type="text" name="Pais"><br/>  
+  <br/>
+  Nivel de Estudio: <select name="Nivel de Estudio" required> <option value="Primario"> Primario <br> </option> /option> <option value="Primario Incompleto">Primario Incompleto</option> <option value="Secundario">Secundario</option> <option value="Secundario Incompleto">Secundario Incompleto</option> <option value="Terciario">Terciario</option> <option value="Terciario Incompleto">Terciario Incompleto</option> <option value="Universitario">Universitario</option> <option value="Universitario Incompleto">Universitario Incompleto</option> <option value="otro">Otro</option> </select><br>
+  <br/>
+  Trabaja Actualmente: <input type="radio" name="Trabaja Actualmente" value="Si" required> Si <input type="radio" name="Trabaja Actualmente" value="No" required> No <br/> 
+  <br/>
+  Busca Trabajo: <input type="radio" name="Busca Trabajo" value="Si" required> Si <input type="radio" name="Busca Trabajo" value="No" required> No <br/> 
+  <br/>
+
+
+
+
+
+
+  Casado <input type="checkbox" id="casado" name="casado" value="casado"> 
+  <br>
+
+  Lenguaje favorito <br>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+  <input type="submit" value="Enviar">  
+  
+</form>  
+<a href="www.google.com.ar" >link a google</a>
+
+<div class="miDiv">
+<a href="www.javierblanco.ar" >link a javier</a>
+javier
+<div class="img">
+  <img src="https://imageio.forbes.com/specials-images/imageserve/606fe1de46a0508d810b0c6d/Super-Dimensional-Fortress-Macross/0x0.jpg?format=jpg&crop=1279,719,x0,y0,safe&width=960" alt="neko" class="neko">
+</div>
+</body>
+</html>
