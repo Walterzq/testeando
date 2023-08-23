@@ -38,7 +38,7 @@ $insert= "insert into empleados(nombre, apellido , email, fechfecha_nacimiento, 
 dni, genero, estado_civil, telefono, celular, direccion, provincia, codigo_postal, pais, nivel_estudio,
 trabaja_actualmente, busca_trabajo ) 
 
-values ('','$nombre', s'$apellido', '$email', '$fechfecha_nacimiento', '$edad','$nacionalidad', 
+values ('$nombre', s'$apellido', '$email', '$fechfecha_nacimiento', '$edad','$nacionalidad', 
 '$dni', '$genero' , '$estado_civil', '$telefono', '$celular', '$direccion', '$provincia', 
 '$codigo_postal', '$pais', '$nivel_estudio', '$trabaja_actualmente', '$busca_trabajo')"; 
 
